@@ -544,7 +544,7 @@
   z-index: 1000;
 }
 
-.fa {
+.fab {
   margin-top: 9px;
 }
 
@@ -2708,6 +2708,14 @@ input[type=text]{
   @include typeface-2(p3, desktop);
 }
 */
+
+mw-96 {
+  max-width: 16px;
+}
+
+.page-limit {
+  max-width: 1216px;
+}
 
 input, select, option, textarea {
   padding: 10px 12px;
