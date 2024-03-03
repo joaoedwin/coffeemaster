@@ -1,6 +1,9 @@
 // Carousel/index.js
 import React, { useEffect, useState } from 'react';
 
+// Link
+import { Link } from 'react-router-dom';
+
 const Carousel = ({ images }) => {
   const [contador, setContador] = useState(0);
 
@@ -45,7 +48,7 @@ const Carousel = ({ images }) => {
       <p className="p-hero">
         O seu negócio com as melhores <br></br>máquinas de café.
       </p>
-      <a href="" className="btn-hero">Conheça nossos produtos</a>
+      <Link to="/products" className="btn-hero">Conheça nossos produtos</Link>
     </div>
   );
 };

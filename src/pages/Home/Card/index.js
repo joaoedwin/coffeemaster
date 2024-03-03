@@ -4,7 +4,8 @@ import api from '../../../services/api';
 // Hooks
 import { useState, useEffect } from 'react';
 
-
+// Link
+import { Link } from 'react-router-dom';
 
 
 
@@ -29,18 +30,19 @@ const Card = ( {content} ) => {
         <>
             <div className="grid-4 card hidden p-0">
                 <div className="thumb hidden">
-                    <a href="" className="p-0">
-                        <img src="img/ACC_3595.jpeg" alt=""/>
-                    </a>
+                    <Link to={"/posts/" + content.id} className="p-0">
+                        <img src={content.imageUrl} alt=""/>
+                    </Link>
                 </div>
                 
                 <div className="p-2">
 
                
                     
-                        <a href="" className="link-title">
+                        <Link to={"/posts/" + content.id} className="link-title">
+                            <h6 class="color-primary">{content.date}</h6>
                             <h4 className="mt-1">{content.title}</h4>
-                        </a>
+                        </Link>
 
                         <div className="mt-2 flex-space">
                             <div className="flex-start-row">

@@ -1,3 +1,7 @@
+// Header e Footer
+import Header from '../Header'
+import Footer from '../Footer'
+
 // Components
 import Hero from './Hero';
 import Card from './Card';
@@ -7,6 +11,9 @@ import api from '../../services/api';
 
 // Hooks
 import { useState, useEffect } from 'react';
+
+// Link
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -28,6 +35,8 @@ const Home = () => {
 
     return (
         <>
+
+            <Header />
 
 
             <Hero/>
@@ -56,12 +65,14 @@ const Home = () => {
 
                     <div className="container flex-center">
                         <div>
-                            <a href="" className="btn">Explorar mais artigos</a>
+                            <Link to="/posts" className="btn">Explorar mais artigos</Link>
                         </div>
                     </div>
                 </section>
             </div>
 
+
+            <Footer />
 
         </>
     );
