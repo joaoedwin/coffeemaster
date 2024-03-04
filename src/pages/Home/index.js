@@ -65,7 +65,7 @@ const Home = () => {
 
                     <div className="container flex-center">
                         <div>
-                            <Link to="/posts" className="btn">Explorar mais artigos</Link>
+                            <Link to="/allposts" className="btn">Explorar mais artigos</Link>
                         </div>
                     </div>
                 </section>
