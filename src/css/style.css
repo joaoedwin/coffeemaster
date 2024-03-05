@@ -444,6 +444,16 @@
   flex-direction: row;*/
   overflow: hidden;
 }
+.container-login {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 128px 0px;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;*/
+  overflow: hidden;
+}
 .container-products-page {
   max-width: 1216px;
   margin: 0 auto;
@@ -519,6 +529,13 @@
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 24px 0px;
+  }
+  .container-login {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 124px 0px;
   }
   .container-products-page {
     -webkit-box-orient: vertical;

@@ -6,7 +6,7 @@ import { useState, useContext } from 'react';
 import api from 'services/api';
 import Context from 'pages/Context';
 
-import BlogLogo from '../../svg/blog-logo2.svg';
+import BlogLogo from '../../svg/icon-logo.svg';
 
 import MD5 from "crypto-js/md5";
 
@@ -93,7 +93,7 @@ const Login = () => {
         <>
           <Header />
           
-          <section className="container">
+          <section className="container-login">
             <div className="row flex-center">
                 <img src={BlogLogo} className="icon-l" alt="" />
             </div>
